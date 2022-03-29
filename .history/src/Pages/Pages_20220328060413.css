@@ -1,0 +1,13 @@
+.splash {
+    background-image: url("../Images/pexels-cottonbro-4069291.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+}
+.cover {
+    background: none;
+    opacity: 0.1;
+    height: 100%;
+
+}

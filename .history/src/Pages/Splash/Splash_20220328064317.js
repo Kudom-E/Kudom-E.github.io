@@ -1,0 +1,19 @@
+import React from 'react'
+import "../Pages.css"
+
+function Splash() {
+  return (
+    <div style={{height: "100%"}}>
+        <div className='details'>
+            <h0>Emmanuel Kudom-Agyemang</h0>
+            <div>
+            <h3 style={{color: "#ffffff"}}>An imaginative UX Designer</h3>
+            <h3 style={{color: "#ffffff"}}>A curious problem solving trying to make an impact</h3>
+            </div>
+        </div>
+        <div className='splash'/>
+    </div>
+  )
+}
+
+export default Splash

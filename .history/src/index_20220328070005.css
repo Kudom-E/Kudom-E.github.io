@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-color: #0A7064;
+  --seconday-color: #FFA17A;
+  --accent-color: #707070;
+  --dark: #000000;
+  --bright: #ffffff;
+}
+
+h1, h3, h4, a {
+  color: var(--accent-color);
+}
+
+h9 {
+  font-size: 5.625rem;
+  color: var(--bright);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+a {
+  font-size: 1.125rem;
+  opacity: 0.5;
+  text-decoration: none;
+  margin: 0 1vw;
+}
+
+
+ul a:hover {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--dark)
+}
+
+h3 {
+  font-size: 1.375rem;
+  margin: 0 1vw;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.logo {
+  width: 8vw;
+  height: 8vw;
+  margin: -50px 0 0 0;
+}
