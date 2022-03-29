@@ -14,7 +14,7 @@ function Splash() {
             <div className='links'>
                 <a href="/#/designs">DESIGNS</a>
                 <p>.</p>
-                <a href="/#/about">ABOUT</a>
+                <a href="/about">ABOUT</a>
                 <p>.</p>
                 <a href="/contact">CONTACT</a>
             </div>
