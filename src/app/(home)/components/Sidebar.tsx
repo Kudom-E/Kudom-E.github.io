@@ -2,9 +2,9 @@ import React from "react";
 import Logo from "@/(home)/components/Logo";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
-import { GrMultiple, GrContactInfo } from "react-icons/gr";
-import { MdOutlineBookmarkAdded } from "react-icons/md";
-import { BiUserPlus, BiLogIn, BiArrowBack } from "react-icons/bi";
+import { GrContactInfo } from "react-icons/gr";
+// import { MdOutlineBookmarkAdded } from "react-icons/md";
+import { BiArrowBack } from "react-icons/bi";
 import { usePathname } from "next/navigation";
 
 type Props = {

@@ -1,9 +1,9 @@
 import Footer from "@/(home)/components/Footer";
 import React from "react";
 
-type Props = {};
+// type Props = {};
 
-const ContactSection = (props: Props) => {
+const ContactSection = () => {
   return (
     <section className="h-screen">
       <div className="px-[5%] max-w-[120rem] mx-auto h-full">
@@ -13,7 +13,7 @@ const ContactSection = (props: Props) => {
               Collaboration
             </h4>
             <h1 className="w-full wrap-text leading-[6rem] pt-[3rem] pb-[5rem] max-w-[60rem] mx-auto">
-              Let's talk about working together
+              {`Let's talk about working together`}
             </h1>
           </div>
           <div className="flex gap-5 justify-center">

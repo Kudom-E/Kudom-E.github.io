@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
-import ProjectSection from "./sections/projects/ProjectSection";
+// import ProjectSection from "./sections/projects/ProjectSection";
 import Image from "next/image";
 import ContactSection from "./sections/contact/ContactSection";
 

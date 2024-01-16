@@ -2,16 +2,16 @@
 
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import SidebarButton from "./SidebarButton";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 type Props = {
   children: React.ReactNode;
 };
 
 const CombinedLayout = ({ children }: Props) => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   return (
     <div className={`z-0 font-serif h-screen overflow-y-scroll`}>

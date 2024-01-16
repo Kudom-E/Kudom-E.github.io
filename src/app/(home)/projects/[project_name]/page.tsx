@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
-import { projectlist } from "../page";
+import { projectlist } from "../data";
 
 const Project = ({ params }: { params: { project_name: string } }) => {
   const ProjectDetails = projectlist.find(

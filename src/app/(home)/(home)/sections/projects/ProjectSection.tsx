@@ -2,9 +2,8 @@ import Image from "next/image";
 import React from "react";
 import project_pic from "@/../public/project.jpeg";
 
-type Props = {};
 
-const ProjectSection = (props: Props) => {
+const ProjectSection = () => {
   return (
     <section className="pt-40">
       <div className="text-center">
