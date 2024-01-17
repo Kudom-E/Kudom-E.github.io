@@ -32,89 +32,53 @@ const ProjectDetails = ({ projectdeets }: Props) => {
         </Link>
       </div>
       <div className="p-5 pt-[5rem]">
-        <div className="max-w-[40rem]">
-          <div>
-            <h4 className="text-sm opacity-50">{projectdeets?.role}</h4>
-            <h1 className="leading-[2rem] md:leading-[6rem] text-4xl md:text-8xl">
-              {projectdeets?.name}
-            </h1>
+        <section className="flex gap-20">
+          <div className="max-w-[40rem]">
+            <div>
+              <h4 className="text-sm opacity-50">{projectdeets?.role}</h4>
+              <h1 className="leading-[2rem] md:leading-[6rem] text-4xl md:text-8xl">
+                {projectdeets?.name}
+              </h1>
+            </div>
+            <div className="pt-10 pb-3 opacity-50">
+              <span className="text-[rgba(var(--primary-color-rgb),1)]">
+                {projectdeets?.tools}
+              </span>
+            </div>
+            <div>
+              <p className="opacity-50">{projectdeets?.summary}</p>
+            </div>
           </div>
-          <div className="py-16 opacity-50">
-            <span>{projectdeets?.tools}</span>
+          {/* home image */}
+          <div className="relative w-full">
+            <Image
+              src={projectdeets?.image}
+              alt="project main image"
+              fill
+              className="object-contain opacity-[20%] rounded-t-[6px] transition-all duration-500 w-full h-full"
+            />
           </div>
-          <div>
-            <p className="opacity-50">
-              Nisi incididunt est tempor aliquip fugiat deserunt eu dolor. In
-              aute veniam irure aliquip reprehenderit tempor. Anim laboris
-              reprehenderit proident quis cillum cillum adipisicing ullamco
-              cillum proident reprehenderit. Culpa duis elit cillum labore
-              cupidatat mollit proident mollit. In aute veniam irure aliquip
-              reprehenderit tempor. Anim laboris reprehenderit proident quis
-              cillum cillum adipisicing ullamco cillum proident reprehenderit.
-              Culpa duis elit cillum labore cupidatat mollit proident mollit.
-            </p>
-          </div>
-        </div>
+        </section>
         {/* image */}
         <div className="w-full">
-          <div className="pt-28 pb-5">
-            <ul className="flex flex-wrap gap-4 w-fit md:ml-auto">
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 0 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(0)}
-              >
-                Home
-              </li>
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 1 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(1)}
-              >
-                Events
-              </li>
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 2 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(2)}
-              >
-                Meet the Team
-              </li>
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 3 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(3)}
-              >
-                Speakers
-              </li>
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 4 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(4)}
-              >
-                About
-              </li>
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 5 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(5)}
-              >
-                Resources
-              </li>
-              <li
-                className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
-                  page === 6 ? "text-[rgba(var(--primary-color-rgb),1)]" : ""
-                }`}
-                onClick={() => setPage(6)}
-              >
-                FAQ
-              </li>
+          <div className="pt-28 pb-5 flex gap-20">
+            <p className="opacity-[50%] md:ml-auto">{`Sample Routes ->`}</p>
+            <ul className="flex flex-wrap gap-4 w-fit">
+              {projectdeets?.image_routes.map((pageImage, index) => {
+                return (
+                  <li
+                    key={index}
+                    className={`cursor-pointer hover:text-[rgba(var(--primary-color-rgb),1)] ${
+                      page === index
+                        ? "text-[rgba(var(--primary-color-rgb),1)]"
+                        : ""
+                    }`}
+                    onClick={() => setPage(index)}
+                  >
+                    {pageImage.name}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="w-full relative">

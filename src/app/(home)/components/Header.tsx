@@ -10,7 +10,7 @@ import Link from "next/link";
 export const routes = [
   { name: "Home", route: "/" },
   { name: "Projects", route: "/projects" },
-  { name: "Contact", route: "/contact" },
+  { name: "Collaboration", route: "/collaboration" },
 ];
 
 const Header = () => {
@@ -29,13 +29,13 @@ const Header = () => {
           <ul className="flex justify-center items-center">
             {routes.map((route, index) => {
               return (
-                <li key={index} className="p-3 hover:translate-y-[-2px]">
+                <li key={index} className="p-3">
                   <Link
                     href={route.route}
                     className={
                       pathname === route.route
                         ? "text-[rgba(var(--primary-color-rgb),1)]"
-                        : "hover:text-[rgba(var(--primary-color-rgb),1)]"
+                        : "hover:text-[rgba(var(--primary-color-rgb),1)] "
                     }
                   >
                     {route.name}
@@ -47,7 +47,7 @@ const Header = () => {
         </div>
         <div className="justify-center items-center gap-4 h-[3rem] hidden md:flex">
           <button className="h-full px-8 bg-[rgba(var(--primary-color-rgb),1)] rounded-[6px] hover:translate-y-[-2px] hover:shadow-[0_20px_80px_-10px_rgba(var(--primary-color-rgb),1)] text-white">
-            <Link href="/">something</Link>
+            <Link href="/contact">Contact</Link>
           </button>
         </div>
       </div>

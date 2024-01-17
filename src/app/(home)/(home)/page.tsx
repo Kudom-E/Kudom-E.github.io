@@ -5,7 +5,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 // import ProjectSection from "./sections/projects/ProjectSection";
 import Image from "next/image";
-import ContactSection from "./sections/contact/ContactSection";
 
 // type Props = {};
 
@@ -28,8 +27,9 @@ const Home = () => {
                   Emmanuel Kudom-Agyemang
                 </h1>
                 <h4 className="p-8 text-center" data-testid="sub-header">
-                  <span className="ltr-mix-bg">
-                    A nextjs boilerplat with Jest, Circle CI, Vercel, Typescript
+                  <span className="ltr-mix-bg whitespace-pre-line text-wrap">
+                    {`Navigating the Digital Landscape: Piecing Together
+                    Innovative Solutions, One Code Puzzle at a Time.`}
                   </span>
                 </h4>
                 <div>
@@ -52,8 +52,6 @@ const Home = () => {
             </section>
           </div>
         </div>
-        {/* <Sections /> */}
-        <ContactSection />
       </div>
     </main>
   );

@@ -6,12 +6,20 @@ import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
 import "@/globals.css";
+import Image from "next/image";
 
 // type Props = {};
 
 const Contact = () => {
   return (
-    <main className="mx-auto px-[5%] lg:px-[15%] pt-[5rem] lg:pt-[10rem] pb-[1rem]">
+    <main className="mx-auto px-[5%] lg:px-[15%] pt-[5rem] lg:pt-[10rem] pb-[1rem] relative">
+      <Image
+        src="/Jig.jpg"
+        alt="puzzle bg"
+        className="absolute top-0 left-0 w-full h-full z-[-1] opacity-[0.05] object-cover"
+        width={3648}
+        height={2736}
+      />
       <section className="md:p-8">
         <div className="bg-[rgba(var(--secondary-color-rgb),1)] max-w-[65rem] mx-auto rounded-[6px] p-5 md:p-10 xl:p-20">
           <section

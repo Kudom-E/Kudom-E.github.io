@@ -6,6 +6,8 @@ import { GrContactInfo } from "react-icons/gr";
 // import { MdOutlineBookmarkAdded } from "react-icons/md";
 import { BiArrowBack } from "react-icons/bi";
 import { usePathname } from "next/navigation";
+import { BsProjector } from "react-icons/bs";
+import { PiHandshake } from "react-icons/pi";
 
 type Props = {
   sidebarOpen: boolean;
@@ -20,6 +22,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
       pathname: "Home",
       path: "/",
       icon: <AiOutlineHome />,
+    },
+    {
+      pathname: "Projects",
+      path: "/projects",
+      icon: <BsProjector />,
+    },
+    {
+      pathname: "Collaboration",
+      path: "/collaboration",
+      icon: <PiHandshake />,
     },
     {
       pathname: "Contact",
