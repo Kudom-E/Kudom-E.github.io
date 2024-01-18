@@ -4,11 +4,6 @@ const nextConfig = {
     unoptimized: true,
   },
   reactStrictMode: true,
-  experimental: {
-    reactRoot: true,
-    concurrentFeatures: true,
-    app: true,
-  },
   output: "export",
 };
 
