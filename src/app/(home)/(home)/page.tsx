@@ -62,7 +62,7 @@ const Home = () => {
                   <Swiper
                     spaceBetween={50}
                     slidesPerView={3}
-                    freemode="true"
+                    freeMode="true"
                     loop={true}
                     autoplay={{
                       delay: 0,
