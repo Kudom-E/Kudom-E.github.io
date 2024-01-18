@@ -7,7 +7,7 @@ import { projectlist } from "./data";
 
 const Projects = () => {
   return (
-    <section className="pt-20 relative">
+    <section className="md:pt-12 relative">
       <div>
         <Image
           src="/Jig.jpg"
@@ -25,15 +25,15 @@ const Projects = () => {
             analytics and visualization.
           </p>
         </div>
-        <div className="grid grid-cols-3 p-20 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 sm:p-10 md:p-15 lg:p-20 gap-8">
           {projectlist.map((project, index) => {
             return (
-              <Link key={index} href={`/projects/${project.link}`}>
+              <Link key={index} href={`/projects/${project.link}`} className="">
                 <div
                   // className={`${index === 0 ? `col-span-2 row-span-2` : ``}`}
                   className="h-full"
                 >
-                  <div className="project-card rounded-[6px] cursor-pointer h-full flex flex-col">
+                  <div className="project-card rounded-[6px] cursor-pointer h-full flex flex-col border-[1px] border-[rgba(var(--primary-color-rgb),1)]">
                     <div className="image-holder rounded-t-[6px] relative aspect-[4/3]">
                       <Image
                         src={project.image}
@@ -42,7 +42,7 @@ const Projects = () => {
                         className="object-cover rounded-t-[6px] transition-all duration-500"
                       />
                     </div>
-                    <div className="p-[4vh] bg-[rgba(var(--secondary-color-rgb),1)] rounded-b-[6px] flex-grow">
+                    <div className="p-[4vh] bg-[rgba(var(--primary-color-rgb),.6)] rounded-b-[5px] flex-grow">
                       <h3>{project.name}</h3>
                       <div className="overflow-hidden h-[24px]">
                         <div className="relative project-info transition-all duration-500">

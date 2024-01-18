@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 // type Props = {};
@@ -23,10 +24,38 @@ const Footer = () => {
           </div>
           <div>
             <ul className="flex gap-5 md:flex-col">
-              <li>Github</li>
-              <li>LinkedIn</li>
-              <li>Gmail</li>
-              <li>Emm.com</li>
+              <li>
+                <Link
+                  href={"https://github.com/Kudom-E"}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:text-[rgba(var(--accent-color-rgb),1)]"
+                >
+                  Github
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={
+                    "https://www.linkedin.com/in/emmanuel-kudom-agyemang-b93a4117a/"
+                  }
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:text-[rgba(var(--accent-color-rgb),1)]"
+                >
+                  LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"mailto:emmanuelkudomagyemang@gmail.com"}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:text-[rgba(var(--accent-color-rgb),1)]"
+                >
+                  Gmail
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

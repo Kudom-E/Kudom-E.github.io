@@ -40,13 +40,13 @@ const ProjectDetails = ({ projectdeets }: Props) => {
                 {projectdeets?.name}
               </h1>
             </div>
-            <div className="pt-10 pb-3 opacity-50">
+            <div className="pt-10 pb-3">
               <span className="text-[rgba(var(--primary-color-rgb),1)]">
                 {projectdeets?.tools}
               </span>
             </div>
             <div>
-              <p className="opacity-50">{projectdeets?.summary}</p>
+              <p className="opacity-80">{projectdeets?.summary}</p>
             </div>
           </div>
           {/* home image */}

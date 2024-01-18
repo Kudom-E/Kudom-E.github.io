@@ -37,12 +37,24 @@ export const projectlist = [
         route: "/scheduler/home.png",
       },
     ],
-    role: "Web developer",
-    tools:
-      "Typescript, Github Actions, React Testing Library, Next, Tailwind, Jest",
+    role: "Software Engineer",
+    tools: "Typescript, Next, Tailwind, Jest",
     link: "scheduler",
-    summary:
-      "Nisi incididunt est tempor aliquip fugiat deserunt eu dolor. In aute veniam irure aliquip reprehenderit tempor. Anim laboris reprehenderit proident quis cillum cillum adipisicing ullamco cillum proident reprehenderit. Culpa duis elit cillum labore cupidatat mollit proident mollit.",
+    summary: `Having identified scheduling issues during my attendance at the movie 
+      event featuring six premieres in a single day, my focus has been on 
+      driving the automation of the scheduling process for 
+      the movie event and creating an efficient system. With a limited number of cinema 
+      rooms available, the challenge was to schedule the six movies within 
+      the four sessions for each cinema room. The complexity was further 
+      addressed by analyzing customer movement by noting the movies they 
+      would choose to watch and the cinema rooms that would be showing them 
+      at specific times. This ensured an optimal schedule regardless of the 
+      selected sequence of four movies. This project not only 
+      streamlined the scheduling logistics for the event but also enhanced 
+      the overall customer experience by strategically organizing cinema 
+      sessions and minimizing room changes, ultimately reducing crowding by 
+      80% and creating a seamless and enjoyable movie-watching experience 
+      for their customers.`,
   },
   // {
   //   name: "Insomniac Night",
@@ -90,12 +102,12 @@ export const projectlist = [
     summary: `The web app developed for the African Pharmaceutical Symposium 
     event in 2023, themed 'The Evolution of Pharmacy Practice: Innovation and 
     Capacity-Building.' As the developer behind this project, my 
-    goal was to create a seamless digital experience that not only reflects 
-    the dynamic evolution of the symposium but also encourage registration. 
-    The app offers a sleek and user-friendly interface, 
-    providing attendees with access to insightful content on plans for the event,
+    goal was to create a seamless digital experience that not only reflected 
+    the dynamic evolution of the symposium but also encouraged registration. 
+    The app offered a sleek and user-friendly interface, 
+    providing users with access to insightful content on plans for the event,
     updates and resources, and answers to questions. This was an exciting project 
-    converting 95% of visitors into participants who registered, therefore 
+    converting 95% of users into participants who registered, therefore 
     contributing massively to the success of the symposium.`,
   },
   {
@@ -108,7 +120,7 @@ export const projectlist = [
       },
       {
         name: "Training",
-        route: "/zro/training_info.png",
+        route: "/zro/training_intro.png",
       },
       {
         name: "Courses",
@@ -127,11 +139,18 @@ export const projectlist = [
         route: "/zro/students.png",
       },
     ],
-    tools: "Angular, SCSS, Tailwind",
-    role: "Frontened Developer",
+    tools: "Angular, SCSS, Typescript, Tailwind",
+    role: "Frontened Lead",
     link: "zroverse",
-    summary:
-      "Nisi incididunt est tempor aliquip fugiat deserunt eu dolor. In aute veniam irure aliquip reprehenderit tempor. Anim laboris reprehenderit proident quis cillum cillum adipisicing ullamco cillum proident reprehenderit. Culpa duis elit cillum labore cupidatat mollit proident mollit.",
+    summary: `As the Frontend lead for the ZROverse project, I've oversaw the 
+      creation of a cutting-edge virtual world. This platform seamlessly 
+      integrates shopping, education for developers, and a marketplace 
+      for service sales. The user-friendly interface provides an 
+      immersive experience for shoppers, while our virtual courses 
+      and marketplace cater to the learning and service needs of our users. 
+      This project exemplifies the transformative potential of technology 
+      to redefine online interactions, offering a versatile and engaging 
+      experience.`,
   },
   {
     name: "KACE Alumni Platform",
@@ -163,9 +182,21 @@ export const projectlist = [
       },
     ],
     tools: "React, SCSS, Jest",
-    role: "Frontend Developer",
+    role: "Frontend Lead",
     link: "aiti",
-    summary:
-      "Nisi incididunt est tempor aliquip fugiat deserunt eu dolor. In aute veniam irure aliquip reprehenderit tempor. Anim laboris reprehenderit proident quis cillum cillum adipisicing ullamco cillum proident reprehenderit. Culpa duis elit cillum labore cupidatat mollit proident mollit.",
+    summary: `As the Frontened lead spearheading the development of a platform 
+      for the alumni of our organization, my primary focus was on 
+      creating a robust and user-friendly space that fostered meaningful 
+      connections and collaboration among alumni, students and the KACE AITI 
+      center.The platform was 
+      designed to facilitate seamless communication, providing a central 
+      hub for alumni to engage in discussions, share experiences, and stay 
+      updated on relevant news and events. Furthermore, the system 
+      incorporated features to showcase alumni achievements, host exclusive 
+      networking opportunities, and offer valuable resources to support 
+      ongoing professional and personal development. Through strategic design 
+      and thoughtful implementation, this platform aimed to strengthen the 
+      bonds within our alumni community and enhance the overall experience 
+      for all its members.`,
   },
 ];
