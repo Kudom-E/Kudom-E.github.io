@@ -1,5 +1,5 @@
 import project_pic from "@/../public/project.jpeg";
-import afps_pic from "@/../public/afps/image1.png";
+import afps_pic from "@/../public/afps/Image1.png";
 import aiti_pic from "@/../public/aiti/Aimage.png";
 import zro_pic from "@/../public/zro/zimage.png";
 import scheduler_pic from "@/../public/scheduler/Simage.png";
