@@ -21,7 +21,7 @@ const Header = () => {
     <header className="px-[5%] w-[100%] max-w-[120rem] mx-auto">
       <div className="p-5 flex justify-between items-center relative">
         <div className="h-[2rem] w-[6rem]">
-          <Link href="/">
+          <Link href="/" className="h-full w-full">
             <Logo />
           </Link>
         </div>
