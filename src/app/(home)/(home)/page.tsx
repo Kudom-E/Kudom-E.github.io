@@ -49,6 +49,9 @@ const Home = () => {
                 >
                   Emmanuel Kudom-Agyemang
                 </h1>
+                <h3 className="text-center text-[1.5rem] sm:text-[1.7rem] md:text-[1.9rem] lg:text-[2rem] text-[rgba(var(--primary-color-rgb),1)]">
+                  Frontend Developer
+                </h3>
                 <h4
                   className="p-8 text-center text-[1rem] sm:text-[1.5rem]"
                   data-testid="sub-header"

@@ -31,9 +31,15 @@ const Collaborate = () => {
                   Get in Touch
                 </button>
               </Link>
-              <button className="h-full px-8 py-3 bg-[rgba(var(--primary-color-rgb),1)] rounded-[6px] hover:translate-y-[-2px] hover:shadow-[0_20px_80px_-10px_rgba(var(--primary-color-rgb),1)] text-white">
-                My CV
-              </button>
+              <Link
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="h-full px-8 py-3 bg-[rgba(var(--primary-color-rgb),1)] rounded-[6px] hover:translate-y-[-2px] hover:shadow-[0_20px_80px_-10px_rgba(var(--primary-color-rgb),1)] text-white">
+                  My CV
+                </button>
+              </Link>
             </div>
           </div>
         </div>
