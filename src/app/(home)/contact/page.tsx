@@ -9,7 +9,7 @@ import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <main className="mx-auto px-[5%] lg:px-[15%] py-[5rem] relative">
+    <section className="mx-auto px-[5%] lg:px-[15%] py-[5rem] relative">
       <Image
         src="/Jig.jpg"
         alt="puzzle bg"
@@ -72,7 +72,7 @@ const Contact = () => {
           </section>
         </div>
       </section>
-    </main>
+    </section>
   );
 };
 
