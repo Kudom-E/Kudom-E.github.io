@@ -16,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Emmanuel Kudom-Agyemang</title>
+        <title>Emmanuel Kudom-Agyemang - Portfolio</title>
       </head>
       <body>
-        <CombinedLayout>{children}</CombinedLayout>
+        <main>
+          <CombinedLayout>{children}</CombinedLayout>
+        </main>
       </body>
     </html>
   );

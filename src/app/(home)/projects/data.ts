@@ -1,8 +1,3 @@
-import afps_pic from "@/../public/afps/Image1.png";
-import aiti_pic from "@/../public/aiti/Aimage.png";
-import zro_pic from "@/../public/zro/zimage.png";
-import scheduler_pic from "@/../public/scheduler/Simage.png";
-
 export const projectlist = [
   // {
   //   name: "St. Luke Cardiac Clinic",
@@ -29,7 +24,7 @@ export const projectlist = [
   // },
   {
     name: "Movie Scheduler",
-    image: scheduler_pic,
+    image: "/scheduler/Simage.png",
     image_routes: [
       {
         name: "home",
@@ -80,7 +75,7 @@ export const projectlist = [
   // },
   {
     name: "African Pharmaceutical Symposium",
-    image: afps_pic,
+    image: "afps/Image1.png",
     image_routes: [
       {
         name: "Home",
@@ -111,7 +106,7 @@ export const projectlist = [
   },
   {
     name: "ZroVerse",
-    image: zro_pic,
+    image: "zro/zimage.png",
     image_routes: [
       {
         name: "Home",
@@ -153,7 +148,7 @@ export const projectlist = [
   },
   {
     name: "KACE Alumni Platform",
-    image: aiti_pic,
+    image: "/aiti/Aimage.png",
     image_routes: [
       {
         name: "Home",

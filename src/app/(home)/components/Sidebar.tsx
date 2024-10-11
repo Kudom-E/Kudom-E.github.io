@@ -41,16 +41,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
   ];
   return (
     <div
-      className={`h-screen bg-[rgba(var(--secondary-color-rgb),1)] min-w-[60%] transition-all duration-300 fixed ${
-        sidebarOpen ? "right-0" : "right-[-60%]"
+      className={`h-screen bg-white min-w-[60%] transition-all duration-300 fixed ${
+        sidebarOpen ? "right-0" : "right-[-100%]"
       } top-0 bottom-0 z-[99]`}
     >
       <div className="p-4 pb-0 flex items-center justify-end">
         <button
-          className="hover:text-[rgba(var(--accent-color-rgb),1)] transition-all duration-300 rotate-180"
+          className="hover:text-red-500 transition-all duration-300 rotate-180 p-[1rem]"
           onClick={() => setSidebarOpen(!sidebarOpen)}
         >
-          <BiArrowBack className="text-inherit" />
+          <BiArrowBack className="w-[2rem] h-[2rem] text-black" />
         </button>
       </div>
       <div className="p-5">
@@ -68,7 +68,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
             return (
               <li key={index} className="mb-4">
                 <Link
-                  className={`flex items-center gap-5 px-5 py-3 hover:text-[rgba(var(--accent-color-rgb))] ${
+                  className={`flex items-center font-semibold gap-5 text-black px-5 py-3 hover:text-[rgba(var(--primary-green-rgb))] ${
                     pathname === tab.path ? "active-link" : ""
                   }`}
                   href={tab.path}
