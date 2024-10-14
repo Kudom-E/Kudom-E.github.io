@@ -6,7 +6,6 @@
     "dev": "cross-env PORT=3001 next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
     "lint": "next lint",
     "test": "jest",
     "coverage": "jest --coverage "
