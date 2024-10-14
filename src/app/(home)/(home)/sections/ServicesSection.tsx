@@ -10,10 +10,6 @@ const ServicesSection = () => {
   });
   const [submitingStatus, setSubmitingStatus] = useState(false);
 
-  useEffect(() => {
-    console.log(formDetails);
-  }, [formDetails]);
-
   const handleInput = (name: string, value: string) => {
     setFormDetails((prevState) => ({ ...prevState, [name]: value }));
   };
@@ -27,6 +23,7 @@ const ServicesSection = () => {
       "https://script.google.com/macros/s/AKfycbxPhbckUWY-7W-fP4zZHC3VkrUyWpkBlc3n7sr89zeH4ZOBBGquJfC18yuww9g1npGyrA/exec",
       {
         method: "POST",
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
