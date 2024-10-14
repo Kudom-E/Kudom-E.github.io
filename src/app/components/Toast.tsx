@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  message?: string;
+  message: string;
 };
 
 const Toast = ({ message }: Props) => {
@@ -30,7 +30,9 @@ const Toast = ({ message }: Props) => {
               ></path>
             </svg>
           </span>
-          <p className="text-green-800 text-base">Your message has been sent</p>
+          <p className="text-green-800">
+            Your settings have been saved {message}
+          </p>
         </div>
       </div>
     </div>
