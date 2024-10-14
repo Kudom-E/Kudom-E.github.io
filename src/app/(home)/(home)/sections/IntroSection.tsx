@@ -15,8 +15,8 @@ const IntroSection = (props: Props) => {
 
   return (
     <section>
-      <div className="h-[100vh] relative overflow-y-visible">
-        <div className="absolute top-0 left-0 w-[20rem] lg:top-[-5rem] lg:w-[50rem]">
+      <div className="h-[100vh] relative overflow-y-visible bg-white">
+        <div className="absolute top-0 left-0 w-[20rem] lg:top-[-5rem] lg:w-[50rem] top-green-piece">
           <Image
             src="pieces/puzzle-1020409_1920.jpg"
             alt="puzzle bg"
@@ -25,7 +25,7 @@ const IntroSection = (props: Props) => {
             height={1920}
           />
         </div>
-        <div className="absolute bottom-0 right-0 w-[20rem] lg:top-[-5rem] lg:w-[50rem]">
+        <div className="absolute bottom-0 right-0 w-[20rem] md:bottom-[8rem] lg:bottom-[10rem] lg:w-[40rem] top-yellow-piece">
           <Image
             src="pieces/puzzle-1020012_1920.jpg"
             alt="puzzle bg"

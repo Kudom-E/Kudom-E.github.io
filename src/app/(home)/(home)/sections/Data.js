@@ -33,9 +33,39 @@ export const stackLogos = [
 ];
 
 export const projects = [
-  { name: "St. Luke Clinic", image: "luke/luke-desk.jpeg", year: "2024" },
-  { name: "AFPS Event", image: "afps/afps-desk.jpeg", year: "2023" },
-  { name: "Cinema Scheduler", image: "scheduler/sched-tab.jpg", year: "2023" },
-  { name: "ZROverse", image: "zro/zro-desk.jpeg", year: "2022" },
-  { name: "AITI Alumni Platform", image: "aiti/aiti-desk.jpeg", year: "2021" },
+  {
+    name: "St. Luke Clinic",
+    short: "stluke",
+    image: "/luke/luke-desk.jpeg",
+    year: "2024",
+    link: "/projects/stluke",
+  },
+  {
+    name: "AFPS Event",
+    short: "afps",
+    image: "/afps/afps-desk.jpeg",
+    year: "2023",
+    link: "/projects/afps",
+  },
+  {
+    name: "Cinema Scheduler",
+    short: "scheduler",
+    image: "/scheduler/sched-desk.svg",
+    year: "2023",
+    link: "/projects/scheduler",
+  },
+  {
+    name: "ZROverse",
+    short: "zroverse",
+    image: "/zro/zro-desk.jpeg",
+    year: "2022",
+    link: "/projects/zroverse",
+  },
+  {
+    name: "AITI Alumni Platform",
+    short: "aiti",
+    image: "/aiti/aiti-desk.jpeg",
+    year: "2021",
+    link: "/projects/aiti",
+  },
 ];

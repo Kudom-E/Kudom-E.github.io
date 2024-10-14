@@ -32,9 +32,8 @@ const Header = ({
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     } else {
-      console.log("Ref is undefined or null");
+      console.log("not scrolling");
     }
-    console.log(ref.current);
   };
 
   return (

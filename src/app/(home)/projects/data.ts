@@ -1,34 +1,55 @@
 export const projectlist = [
-  // {
-  //   name: "St. Luke Cardiac Clinic",
-  //   image: project_pic,
-  //   image_routes: [
-  //     {v
-  //       name: "home",
-  //       route: "/afps/home_page.png",
-  //     },
-  //     {
-  //       name: "events",
-  //       route: "/afps/events_page.png",
-  //     },
-  //     {
-  //       name: "team",
-  //       route: "/afps/team_page.png",
-  //     },
-  //   ],
-  //   role: "Web Developer",
-  //   tools: "React, Node, Tailwind, Circle CI, Vercel, Jest",
-  //   link: "flightlocal13",
-  //   summary:
-  //     "Nisi incididunt est tempor aliquip fugiat deserunt eu dolor. In aute veniam irure aliquip reprehenderit tempor. Anim laboris reprehenderit proident quis cillum cillum adipisicing ullamco cillum proident reprehenderit. Culpa duis elit cillum labore cupidatat mollit proident mollit.",
-  // },
+  {
+    name: "St. Luke Cardiac Clinic",
+    image: {
+      view: "/luke/luke-1.png",
+      desktop: "/luke/luke-desk.jpeg",
+      tab: "/luke/luke-tab.svg",
+      mobile: "/luke/luke-mobile.svg",
+    },
+    live: "Coming Soon",
+    image_routes: [
+      {
+        name: "home",
+        route: "/luke/luke-home.png",
+      },
+      {
+        name: "services",
+        route: "/luke/luke-services.png",
+      },
+      {
+        name: "about",
+        route: "/luke/luke-about.png",
+      },
+      {
+        name: "contact",
+        route: "/luke/luke-contact.png",
+      },
+    ],
+    role: "Web Developer",
+    tools:
+      "Next.js, Typescript, Express.js, TailwindCSS, Postgres, Github, Github Actions, AWS, Vercel, Jest, Cypress",
+    link: "stluke",
+    summary:
+      "The clinic website I developed aimed to provide a seamless user experience for booking appointments and managing clinic operations. Patients could easily schedule appointments, view available time slots, and receive updates, while the clinic staff efficiently managed bookings, cancellations, and patient records. The user-friendly interface and optimized functionality contributed to smoother operations and improved patient satisfaction, making the platform a valuable asset for both users and clinic staff.",
+  },
   {
     name: "Movie Scheduler",
-    image: "/scheduler/Simage.png",
+    image: {
+      view: "/scheduler/Simage.png",
+      desktop: "/scheduler/sched-desk.svg",
+      tab: "/scheduler/sched-tab.jpg",
+      mobile: "/scheduler/sched-mobile.svg",
+    },
+    live: "Coming Soon",
     image_routes: [
       {
         name: "home",
         route: "/scheduler/home.png",
+      },
+      {
+        name: "try",
+        route: "/scheduler/try.png",
       },
     ],
     role: "Software Engineer",
@@ -50,32 +71,15 @@ export const projectlist = [
       80% and creating a seamless and enjoyable movie-watching experience 
       for their customers.`,
   },
-  // {
-  //   name: "Insomniac Night",
-  //   image: project_pic,
-  //   image_routes: [
-  //     {
-  //       name: "home",
-  //       route: "/afps/home_page.png",
-  //     },
-  //     {
-  //       name: "events",
-  //       route: "/afps/events_page.png",
-  //     },
-  //     {
-  //       name: "team",
-  //       route: "/afps/team_page.png",
-  //     },
-  //   ],
-  //   role: "Web Developer",
-  //   tools: "React, Node, Tailwind, Circle CI, Vercel, Jest",
-  //   link: "flightlocal33",
-  //   summary:
-  //     "Nisi incididunt est tempor aliquip fugiat deserunt eu dolor. In aute veniam irure aliquip reprehenderit tempor. Anim laboris reprehenderit proident quis cillum cillum adipisicing ullamco cillum proident reprehenderit. Culpa duis elit cillum labore cupidatat mollit proident mollit.",
-  // },
   {
     name: "African Pharmaceutical Symposium",
-    image: "afps/Image1.png",
+    image: {
+      view: "/afps/Image1.png",
+      desktop: "/afps/afps-desk.svg",
+      tab: "/afps/afps-mobile.svg",
+      mobile: "/afps/afps-tab.svg",
+    },
+    live: "No Longer Live",
     image_routes: [
       {
         name: "Home",
@@ -90,12 +94,12 @@ export const projectlist = [
         route: "/afps/team_page.png",
       },
     ],
-    tools: "React, TailwindCSS, SASS, PrimeReact, Jest",
+    tools: "React, Typescript, TailwindCSS, PrimeReact, Jest",
     role: "Web Developer",
     link: "afps",
-    summary: `The web app developed for the African Pharmaceutical Symposium 
+    summary: `The web app developed for the 11th African Pharmaceutical Symposium 
     event in 2023, themed 'The Evolution of Pharmacy Practice: Innovation and 
-    Capacity-Building.' As the developer behind this project, my 
+    Capacity-Building.' As the developer hired for this project, my 
     goal was to create a seamless digital experience that not only reflected 
     the dynamic evolution of the symposium but also encouraged registration. 
     The app offered a sleek and user-friendly interface, 
@@ -106,7 +110,13 @@ export const projectlist = [
   },
   {
     name: "ZroVerse",
-    image: "zro/zimage.png",
+    image: {
+      view: "/zro/zimage.png",
+      desktop: "/zro/zro-desk.jpeg",
+      tab: "/zro/zro-tab.svg",
+      mobile: "/zro/zro-mobile.svg",
+    },
+    live: "No Longer Live",
     image_routes: [
       {
         name: "Home",
@@ -133,8 +143,8 @@ export const projectlist = [
         route: "/zro/students.png",
       },
     ],
-    tools: "Angular, SCSS, Typescript, Tailwind",
-    role: "Frontened Lead",
+    tools: "Angular, Typescript, SCSS, TailwindCSS, Jest, Cypress",
+    role: "Frontened Engineering Lead",
     link: "zroverse",
     summary: `As the Frontend lead for the ZROverse project, I've oversaw the 
       creation of a cutting-edge virtual world. This platform seamlessly 
@@ -148,7 +158,13 @@ export const projectlist = [
   },
   {
     name: "KACE Alumni Platform",
-    image: "/aiti/Aimage.png",
+    image: {
+      view: "/aiti/Aimage.png",
+      desktop: "/aiti/aiti-desk.jpeg",
+      tab: "/aiti/aiti-tab.svg",
+      mobile: "/aiti/aiti-mobile.svg",
+    },
+    live: "No Longer Live",
     image_routes: [
       {
         name: "Home",
@@ -175,7 +191,7 @@ export const projectlist = [
         route: "/aiti/alumni_dash.png",
       },
     ],
-    tools: "React, SCSS, Jest",
+    tools: "React, Javascript, HTML, CSS, Jest",
     role: "Frontend Lead",
     link: "aiti",
     summary: `As the Frontened lead spearheading the development of a platform 

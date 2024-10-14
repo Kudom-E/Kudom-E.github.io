@@ -36,7 +36,7 @@ const Projects = () => {
                   <div className="project-card rounded-[6px] cursor-pointer h-full flex flex-col border-[1px] border-[rgba(var(--primary-color-rgb),1)]">
                     <div className="image-holder rounded-t-[6px] relative aspect-[4/3]">
                       <Image
-                        src={project.image}
+                        src={project.image.desktop}
                         alt="project image"
                         fill
                         className="object-cover rounded-t-[6px] transition-all duration-500"
