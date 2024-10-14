@@ -40,6 +40,9 @@ const ServicesSection = () => {
     } catch (error) {
       console.error("Error sending data:", error);
     }
+
+    setShowToast(true);
+    setSubmitingStatus(false);
   };
 
   return (
