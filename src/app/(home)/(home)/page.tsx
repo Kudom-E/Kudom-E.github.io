@@ -55,7 +55,6 @@ const Home = () => {
         } else {
           observer.observe(ref.current);
         }
-      } else {
       }
     });
 

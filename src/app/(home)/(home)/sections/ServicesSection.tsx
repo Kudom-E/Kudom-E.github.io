@@ -1,10 +1,8 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-type Props = {};
-
 // Contact
-const ServicesSection = (props: Props) => {
+const ServicesSection = () => {
   const [formDetails, setFormDetails] = useState({
     name: "",
     email: "",
@@ -36,6 +34,8 @@ const ServicesSection = (props: Props) => {
       }
     );
 
+    console.log(res);
+
     setFormDetails({
       name: "",
       email: "",
@@ -57,7 +57,7 @@ const ServicesSection = (props: Props) => {
       <div className="text-black px-[1rem] relative z-[2]">
         <div className="text-center pt-[5rem]">
           <h2 className="font-semibold">Contact me</h2>
-          <p className="text-[1.2rem]">Let's connect and collaborate!</p>
+          <p className="text-[1.2rem]">Let&apos;s connect and collaborate!</p>
           <p className="font-normal text-[1.2rem]">
             {" "}
             Whether you have an opportunity in mind,

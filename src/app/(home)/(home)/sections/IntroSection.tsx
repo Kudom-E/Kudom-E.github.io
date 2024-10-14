@@ -2,9 +2,7 @@ import React from "react";
 import ContinualTypings from "../components/ContinualTypings";
 import Image from "next/image";
 
-type Props = {};
-
-const IntroSection = (props: Props) => {
+const IntroSection = () => {
   const names = [
     "Emmanuel!",
     "Kudom!",
@@ -70,7 +68,7 @@ const IntroSection = (props: Props) => {
             <div className="flex justify-center flex-grow-0 text-2xl">
               <div className="text-black font-semibold bg-[rgba(var(--primary-green-rgb),0.05)] backdrop-blur p-[.5rem] rounded-[2rem] hover:shadow-[0_5px_20px_0px_rgba(0,0,0,0.05)] w-fit">
                 <button className="bg-white rounded-[1.5rem] px-[2rem] py-[1rem] w-fit">
-                  Let's Work
+                  Let&apos;s Work
                 </button>
               </div>
             </div>

@@ -2,9 +2,7 @@ import React from "react";
 import { stackLogos } from "./Data";
 import Image from "next/image";
 
-type Props = {};
-
-const StackSection = (props: Props) => {
+const StackSection = () => {
   return (
     <div className="relative">
       <div className="w-[30rem] md:w-[60rem] fixed top-0 left-0 right-0 mx-auto z-[-1]">
