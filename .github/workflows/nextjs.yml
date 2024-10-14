@@ -44,8 +44,7 @@ jobs:
         run: npm ci # Update if using yarn
 
       - name: Set environment variables
-        env:
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+        run: echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}" >> $GITHUB_ENV
 
       - name: Build with Next.js
         run: npm run build
