@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import Toast from "../components/Toast";
 
 // Contact
 const ServicesSection = () => {
+  const [showToast, setShowToast] = useState(false);
   const [formDetails, setFormDetails] = useState({
     name: "",
     email: "",
@@ -17,31 +19,32 @@ const ServicesSection = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const submittedData = formDetails;
+    setFormDetails({
+      name: "",
+      email: "",
+      message: "",
+    });
     setSubmitingStatus(true);
 
-    const res = await fetch(
-      "https://script.google.com/macros/s/AKfycbxPhbckUWY-7W-fP4zZHC3VkrUyWpkBlc3n7sr89zeH4ZOBBGquJfC18yuww9g1npGyrA/exec",
-      {
+    const URL = process.env.NEXT_PUBLIC_API_URL;
+
+    try {
+      await fetch(`${URL}`, {
         method: "POST",
         mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(submittedData),
-      }
-    );
-
-    console.log(res);
-
-    setFormDetails({
-      name: "",
-      email: "",
-      message: "",
-    });
+      });
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
   };
 
   return (
     <section className="bg-white relative">
+      {showToast && <Toast onClose={() => setShowToast(false)} />}
       <div className="absolute bottom-[-5rem] lg:bottom-[-.5rem] right-0 w-[10rem] z-[1] hidden md:block">
         <Image
           src="pieces/puzzle-1020410_1920.jpg"
@@ -148,7 +151,6 @@ const ServicesSection = () => {
                       )}
                     </button>
                   </div>
-
                   {/* <div className="flex justify-center flex-grow-0 pt-[1.5rem]">
                     <div className="text-black w-full font-semibold bg-[rgba(var(--primary-green-rgb),0.05)] backdrop-blur p-[.5rem] rounded-[2rem] hover:shadow-[0_5px_20px_0px_rgba(0,0,0,0.05)] ">
                       <button className="bg-white rounded-[1.5rem] px-[2rem] py-[1rem] w-full outline-none">

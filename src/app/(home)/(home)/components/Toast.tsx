@@ -1,10 +1,20 @@
-import React from "react";
+// components/Toast.tsx
+import React, { useEffect } from "react";
 
-type Props = {
-  message?: string;
+type ToastProps = {
+  duration?: number; // Optional duration
+  onClose: () => void;
 };
 
-const Toast = ({ message }: Props) => {
+const Toast: React.FC<ToastProps> = ({ duration = 3000, onClose }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onClose();
+    }, duration);
+
+    return () => clearTimeout(timer);
+  }, [duration, onClose]);
+
   return (
     <div className="fixed bottom-0 left-0 w-full pt-8 pb-10 z-50">
       <div className="flex px-6 justify-center">
