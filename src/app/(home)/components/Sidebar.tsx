@@ -7,7 +7,6 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 // import { MdOutlineBookmarkAdded } from "react-icons/md";
 import { BiArrowBack } from "react-icons/bi";
 import { GiSkills } from "react-icons/gi";
-import { usePathname } from "next/navigation";
 import { GoProjectRoadmap } from "react-icons/go";
 
 type Props = {
@@ -31,8 +30,6 @@ const Sidebar = ({
   ProjSec,
   activeSec,
 }: Props) => {
-  const pathname = usePathname();
-
   const tabs = [
     {
       pathname: "Home",
