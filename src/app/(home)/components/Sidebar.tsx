@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "@/(home)/components/Logo";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 import { GrContactInfo } from "react-icons/gr";
