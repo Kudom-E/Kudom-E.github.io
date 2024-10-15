@@ -30,7 +30,7 @@ const Information = ({ currentProject }: Props) => {
                   <p className="text-sm">{projectExtraDetail?.mainFeature}</p>
                 </div>
               </div>
-              {projectExtraDetail?.live === "Live" ? (
+              {/* {projectExtraDetail?.live === "Live" ? (
                 <div className="bg-[rgba(var(--primary-green-rgb),1)] py-[1rem] px-[1.5rem] rounded-[3rem] w-full text-center cursor-not-allowed">
                   <span className="text-sm font-semibold text-white">
                     Visit Site
@@ -48,7 +48,7 @@ const Information = ({ currentProject }: Props) => {
                     {projectExtraDetail?.live}
                   </span>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="pr-[1rem] flex-shrink">
               <div>

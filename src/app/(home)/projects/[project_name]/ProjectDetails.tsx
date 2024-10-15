@@ -54,7 +54,7 @@ const ProjectDetails = ({ projectdeets }: Props) => {
               </p>
             </div>
             <div className="flex items-center pt-[1rem] gap-2">
-              <div
+              {/* <div
                 className={`${
                   projectdeets?.live === "No Longer Live"
                     ? "bg-red-500"
@@ -64,7 +64,7 @@ const ProjectDetails = ({ projectdeets }: Props) => {
                 <span className="text-sm font-semibold">
                   {projectdeets?.live}
                 </span>
-              </div>
+              </div> */}
               <div className="w-fit">
                 <Link href={`/projects/${projectdeets?.link}/details`}>
                   <span className="text-black/50 underline font-semibold hover:text-[rgba(var(--primary-green-rgb),1)] text-base">
