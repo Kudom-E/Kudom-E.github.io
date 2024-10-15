@@ -3,42 +3,77 @@ import Logo from "@/(home)/components/Logo";
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 import { GrContactInfo } from "react-icons/gr";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 // import { MdOutlineBookmarkAdded } from "react-icons/md";
 import { BiArrowBack } from "react-icons/bi";
+import { GiSkills } from "react-icons/gi";
 import { usePathname } from "next/navigation";
-import { BsProjector } from "react-icons/bs";
-import { PiHandshake } from "react-icons/pi";
+import { GoProjectRoadmap } from "react-icons/go";
 
 type Props = {
   sidebarOpen: boolean;
   setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  InfoSec: React.RefObject<HTMLDivElement>;
+  AbtSec: React.RefObject<HTMLDivElement>;
+  StkSec: React.RefObject<HTMLDivElement>;
+  ConSec: React.RefObject<HTMLDivElement>;
+  ProjSec: React.RefObject<HTMLDivElement>;
+  activeSec: string | null;
 };
 
-const Sidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
+const Sidebar = ({
+  sidebarOpen,
+  setSidebarOpen,
+  InfoSec,
+  AbtSec,
+  StkSec,
+  ConSec,
+  ProjSec,
+  activeSec,
+}: Props) => {
   const pathname = usePathname();
 
   const tabs = [
     {
       pathname: "Home",
-      path: "/",
       icon: <AiOutlineHome />,
+      ref: InfoSec,
+    },
+    {
+      pathname: "About",
+      icon: <IoIosInformationCircleOutline />,
+      ref: AbtSec,
+    },
+    {
+      pathname: "Stack",
+      icon: <GiSkills />,
+      ref: StkSec,
     },
     {
       pathname: "Projects",
-      path: "/projects",
-      icon: <BsProjector />,
-    },
-    {
-      pathname: "Collaboration",
-      path: "/collaboration",
-      icon: <PiHandshake />,
+      icon: <GoProjectRoadmap />,
+      ref: ProjSec,
     },
     {
       pathname: "Contact",
-      path: "/contact",
       icon: <GrContactInfo />,
+      ref: ConSec,
     },
   ];
+
+  const handleScrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.log("not scrolling");
+    }
+  };
+
+  const navigateAround = (ref: React.RefObject<HTMLDivElement>) => {
+    handleScrollToSection(ref);
+    setSidebarOpen(false);
+  };
+
   return (
     <div
       className={`h-screen bg-white min-w-[60%] transition-all duration-300 fixed ${
@@ -67,16 +102,15 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
           {tabs.map((tab, index) => {
             return (
               <li key={index} className="mb-4">
-                <Link
+                <div
                   className={`flex items-center font-semibold gap-5 text-black px-5 py-3 hover:text-[rgba(var(--primary-green-rgb))] ${
-                    pathname === tab.path ? "active-link" : ""
+                    activeSec === tab.pathname ? "active-link" : ""
                   }`}
-                  href={tab.path}
-                  onClick={() => setSidebarOpen(false)}
+                  onClick={() => navigateAround(tab.ref)}
                 >
                   {tab.icon}
                   <p>{tab.pathname}</p>
-                </Link>
+                </div>
               </li>
             );
           })}

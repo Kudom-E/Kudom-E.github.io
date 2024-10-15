@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Toast from "../components/Toast";
+import Link from "next/link";
 
 // Contact
 const ServicesSection = () => {
@@ -143,7 +144,7 @@ const ServicesSection = () => {
                   </div>
                   <div className="pt-[1.5rem]">
                     <button
-                      className="bg-black text-white w-full py-[.5rem] rounded-full flex items-center justify-center"
+                      className="bg-black text-white w-full py-[.5rem] rounded-full flex items-center justify-center hover:shadow-[0_5px_20px_0px_rgba(0,0,0,0.25)]"
                       disabled={submitingStatus}
                       type="submit"
                     >
@@ -167,20 +168,41 @@ const ServicesSection = () => {
                 <div className="pt-[1rem]">
                   <h6 className="font-bold">Find my profile</h6>
                   <p className="text-base">Connect with a part of my journey</p>
-                  <div className="pt-[.75rem]">
-                    <p className="underline font-semibold text-base">Github</p>
-                    <p className="underline font-semibold text-base py-[.25rem]">
+                  <div className="pt-[.75rem] flex flex-col">
+                    <Link
+                      href={"https://github.com/Kudom-E"}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="hover:text-[rgba(var(--primary-green-rgb),1)] font-semibold"
+                    >
+                      Github
+                    </Link>
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/emmanuel-kudom-agyemang-b93a4117a/"
+                      }
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="hover:text-[rgba(var(--primary-green-rgb),1)] font-semibold"
+                    >
                       LinkedIn
-                    </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-[2rem]">
                   <h6 className="font-bold">Chat with me</h6>
                   <p className="text-base">Speak to me via social media</p>
                   <div className="pt-[.75rem]">
-                    <p className="underline font-semibold text-base">
-                      Message on LinkedIn
-                    </p>
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/emmanuel-kudom-agyemang-b93a4117a/"
+                      }
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="hover:text-[rgba(var(--primary-green-rgb),1)] font-semibold"
+                    >
+                      Message me on LinkedIn
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-[2rem]">
@@ -189,7 +211,14 @@ const ServicesSection = () => {
                     Send me an Email any day of the week.
                   </p>
                   <div className="pt-[.75rem]">
-                    <p className="underline font-semibold text-base">Gmail</p>
+                    <Link
+                      href={"mailto:emmanuelkudomagyemang@gmail.com"}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="hover:text-[rgba(var(--primary-green-rgb),1)] font-semibold"
+                    >
+                      Gmail
+                    </Link>
                   </div>
                 </div>
               </div>

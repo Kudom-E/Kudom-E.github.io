@@ -7,6 +7,7 @@ import IntroSection from "./sections/IntroSection";
 import Header from "../components/Header";
 import StackSection from "./sections/StackSection";
 import ServicesSection from "./sections/ServicesSection";
+import SidebarButton from "../components/SidebarButton";
 
 const Home = () => {
   const InfoSec = useRef<HTMLDivElement>(null);
@@ -67,6 +68,14 @@ const Home = () => {
   return (
     <>
       <Header
+        InfoSec={InfoSec}
+        AbtSec={AbtSec}
+        StkSec={StkSec}
+        ConSec={ConSec}
+        ProjSec={ProjSec}
+        activeSec={activeSection}
+      />
+      <SidebarButton
         InfoSec={InfoSec}
         AbtSec={AbtSec}
         StkSec={StkSec}

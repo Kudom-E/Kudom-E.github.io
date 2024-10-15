@@ -206,6 +206,6 @@ strong {
 }
 @media (max-height: 1024px) {
   .about-head {
-    padding-top: 2rem !important;
+    padding-top: 5rem !important;
   }
 }

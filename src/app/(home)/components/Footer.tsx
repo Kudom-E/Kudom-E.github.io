@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -9,6 +10,15 @@ const Footer = () => {
       <div className="px-[5%] py-[3rem] lg:py-0 max-w-[120rem]">
         <div className="flex justify-between flex-wrap items-start">
           <div className="flex flex-col">
+            <div className="w-[5rem]">
+              <Image
+                src={"/e-logo.svg"}
+                width={1935}
+                height={1271}
+                className="w-full h-full"
+                alt="my logo"
+              />
+            </div>
             <div className="max-w-[25rem] flex-grow text-black">
               Passionate about crafting digital experiences, I am an engineer
               with a keen eye for detail and a love for problem-solving. My
