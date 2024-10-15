@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ExpertiseSection = () => {
@@ -58,9 +59,15 @@ const ExpertiseSection = () => {
 
         <div className="h-[100vh] flex items-center sticky top-0">
           <div className="text-black/80 font-semibold bg-[rgba(var(--primary-green-rgb),0.05)] backdrop-blur p-[.5rem] mt-[30rem] rounded-[2rem] hover:shadow-[0_5px_20px_0px_rgba(0,0,0,0.05)]">
-            <button className="bg-white rounded-[1.5rem] px-[2rem] py-[1rem] w-fit">
-              Read My CV
-            </button>
+            <Link
+              href="/Resume_2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-white rounded-[1.5rem] px-[2rem] py-[1rem] w-fit">
+                Read My Resume
+              </button>
+            </Link>
           </div>
         </div>
       </div>

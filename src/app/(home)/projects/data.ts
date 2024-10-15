@@ -27,7 +27,7 @@ export const projectlist = [
       },
       {
         name: "dashboard",
-        route: "/luke/luke-dash.png",
+        route: "/luke/luke-dash.svg",
       },
     ],
     role: "Web Developer",
