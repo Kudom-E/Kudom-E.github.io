@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 // import project_pic from "@/../public/project.jpeg";
 // import Link from "next/link";
