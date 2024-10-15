@@ -48,7 +48,7 @@ const SidebarButton = ({
           className="h-[3rem] aspect-square bg-[rgba(var(--primary-green-rgb),1)] rounded-[6px] block md:hidden"
           onClick={() => setSidebarOpen(!sidebarOpen)}
         >
-          <HiMenuAlt3 className="mx-auto w-5 h-5" />
+          <HiMenuAlt3 className="mx-auto w-5 h-5 text-white" />
         </button>
       </div>
       <Sidebar

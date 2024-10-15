@@ -8,6 +8,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { BiArrowBack } from "react-icons/bi";
 import { GiSkills } from "react-icons/gi";
 import { GoProjectRoadmap } from "react-icons/go";
+import Image from "next/image";
 
 type Props = {
   sidebarOpen: boolean;
@@ -82,19 +83,27 @@ const Sidebar = ({
           className="hover:text-red-500 transition-all duration-300 rotate-180 p-[1rem]"
           onClick={() => setSidebarOpen(!sidebarOpen)}
         >
-          <BiArrowBack className="w-[2rem] h-[2rem] text-black" />
+          <BiArrowBack className="w-[2rem] h-[1rem] text-black" />
         </button>
       </div>
-      <div className="p-5">
+      <div className="">
         <Link
           href="/"
-          className="w-[8vw] min-w-[5rem] mx-auto block"
+          className="min-w-[5rem] mx-auto block"
           onClick={() => setSidebarOpen(false)}
         >
-          <Logo />
+          <div className="h-[4rem] w-[8rem] mx-auto">
+            <Image
+              src={"/e-logo.svg"}
+              width={1935}
+              height={1271}
+              className="w-full h-full"
+              alt="my logo"
+            />
+          </div>
         </Link>
       </div>
-      <div className="pt-10">
+      <div className="pt-8">
         <ul className="flex flex-col justify-between">
           {tabs.map((tab, index) => {
             return (
