@@ -16,16 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="/logoround.svg" />
+        <meta property="og:image" content="/e-logo.svg" />
         <meta property="og:url" content="https://kudom-e.github.io/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/logoround.svg" />
-        <meta name="twitter:title" content="YES" />
-        <meta
-          name="twitter:description"
-          content="Description of my page content"
-        />
+        <meta name="twitter:image" content="/e-logo.svg" />
+        <meta name="twitter:title" content="Emmanuel Kudom-Agyemang" />
+        <meta name="twitter:description" content="Portfolio" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
