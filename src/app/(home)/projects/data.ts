@@ -30,7 +30,7 @@ export const projectlist = [
     tools: "HTML5, CSS3, Liquid, Shopify",
     link: "menalated",
     summary:
-      "The clinic website I developed aimed to provide a seamless user experience for booking appointments and managing clinic operations. Patients could easily schedule appointments, view available time slots, and receive updates, while the clinic staff efficiently managed bookings, cancellations, and patient records. The user-friendly interface and optimized functionality contributed to smoother operations and improved patient satisfaction, making the platform a valuable asset for both users and clinic staff.",
+      "Menalated.com is an e-commerce platform dedicated to providing high-quality hair and beard care products specifically formulated for men with textured hair, including kinky, wavy, coily, and curly types. MENALATED.COM. The website offers a seamless shopping experience, allowing customers to explore a variety of products, access educational resources, and participate in a rewarding loyalty program.",
   },
   {
     name: "St. Luke Cardiac Clinic",
