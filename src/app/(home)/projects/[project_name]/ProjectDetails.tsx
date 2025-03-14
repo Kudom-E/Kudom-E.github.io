@@ -53,18 +53,28 @@ const ProjectDetails = ({ projectdeets }: Props) => {
                 {projectdeets?.summary}
               </p>
             </div>
-            <div className="flex items-center pt-[1rem] gap-2">
-              {/* <div
+            <div className="flex items-center pt-[1rem] gap-4">
+              <a
+                href={
+                  projectdeets?.live !== "No Longer Live" &&
+                  projectdeets?.live !== "Coming Soon"
+                    ? projectdeets?.live
+                    : "/"
+                }
                 className={`${
-                  projectdeets?.live === "No Longer Live"
-                    ? "bg-red-500"
+                  projectdeets?.live === "No Longer Live" ||
+                  projectdeets?.live === "Coming Soon"
+                    ? "bg-red-500  cursor-not-allowed"
                     : "bg-blue-400"
-                } py-[1rem] px-[1.5rem] rounded-[3rem] w-fit cursor-not-allowed`}
+                } py-[1rem] px-[3rem] rounded-[3rem] w-fit`}
               >
                 <span className="text-sm font-semibold">
-                  {projectdeets?.live}
+                  {projectdeets?.live !== "No Longer Live" &&
+                  projectdeets?.live !== "Coming Soon"
+                    ? "Live"
+                    : projectdeets?.live}
                 </span>
-              </div> */}
+              </a>
               <div className="w-fit">
                 <Link href={`/projects/${projectdeets?.link}/details`}>
                   <span className="text-black/50 underline font-semibold hover:text-[rgba(var(--primary-green-rgb),1)] text-base">

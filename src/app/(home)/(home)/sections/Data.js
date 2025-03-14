@@ -34,6 +34,13 @@ export const stackLogos = [
 
 export const projects = [
   {
+    name: "Menalated",
+    short: "menalated",
+    image: "/menalated/men-desk.svg",
+    year: "2025",
+    link: "/projects/menalated",
+  },
+  {
     name: "St. Luke Clinic",
     short: "stluke",
     image: "/luke/luke-desk.jpeg",

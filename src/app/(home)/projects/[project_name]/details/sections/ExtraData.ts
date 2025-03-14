@@ -1,5 +1,28 @@
 export const moreDetails = [
   {
+    name: "menalated",
+    users: "ecommerce",
+    objective: "sales",
+    mainFeature: "Shop",
+    live: "No Longer Live",
+    description:
+      "Built specifically for the 11th African Pharmaceutical Symposium hosted in Ghana, this product provides pharmacy students with a seamless registration process. With a clean, user-friendly design, students can easily register for the event while staying up-to-date with the latest information and news through dedicated pages. The responsive interface ensures smooth navigation across all devices.",
+    approach:
+      "Thoughtfully designed to enhance the registration experience for pharmacy students to help register for the 11th African Pharmaceutical Symposium. With a focus on simplicity and efficiency, the app enables users to easily register for the event while providing access to essential information and updates. Each feature is crafted to ensure a seamless and engaging experience, making it the perfect platform for students to register and participate fully in the symposium, all within a responsive interface that adapts to any device.",
+    vision:
+      "Built on the belief that event participation should be effortless and engaging for pharmacy students. This app transforms the registration process into an intuitive experience, seamlessly guiding users through event details and updates. Incorporating user-friendly features and real-time notifications, it ensures that students stay informed and connected throughout the symposium. With its commitment to enhancing accessibility and interaction, It aims to direct students to fully immerse themselves in their pharmacy journey, leaving a positive impact on their professional growth.",
+    challenge:
+      "Developing an app for a pharmaceutical symposium comes with unique challenges, particularly in ensuring a seamless registration process and delivering real-time updates to a large group of users. Building It required careful attention to scalability, allowing it to handle high traffic during peak registration periods. Additionally, integrating features like event schedules, notifications, and news updates involved balancing performance with ease of use. By addressing these technical hurdles, the development team ensured the app not only functions smoothly but also delivers an engaging and reliable experience for all users.",
+    userNeeds:
+      "In order to encourage pharmacy students to register for the symposium, it’s essential to showcase the value of attending. It meets this need by highlighting previous symposiums, including key sessions, impactful speakers, and successful outcomes, all presented through an engaging interface. The app provides testimonials, photo galleries, and video highlights to show the benefits of participation, helping students see the value in attending. Along with an easy registration process, this compelling content ensures that users are motivated to join and stay informed throughout the event.",
+    features:
+      "Designed to facilitate easy event registration while keeping students engaged with up-to-date information. Its sleek interface, adaptable to any device, allows users to navigate effortlessly between registration pages, event schedules, and news updates. The platform fosters student participation by delivering a seamless and interactive user experience throughout the symposium.",
+    optimization:
+      "Optimized for accessibility and efficiency, ensuring that all users can navigate the platform with ease. It integrates real-time notifications and performance optimization ensure that students receive timely updates and enjoy a smooth experience, regardless of the device they are using.",
+    conclusion:
+      "More than just an event registration tool—it’s a powerful platform that streamlines the symposium experience for pharmacy students. By combining a user-friendly interface with real-time updates and essential accessibility features, the app ensures that students can fully engage with the event. Whether they’re registering for sessions or keeping track of event news, It empowers students to focus on their education and maximize their participation in the symposium.",
+  },
+  {
     name: "afps",
     users: "Pharmacy Students",
     objective: "Registration",

@@ -1,5 +1,38 @@
 export const projectlist = [
   {
+    name: "Menalated",
+    image: {
+      view: "/menalated/desk.png",
+      desktop: "/menalated/men-desk.svg",
+      tab: "/menalated/men-tab.svg",
+      mobile: "/menalated/men-mobile.svg",
+    },
+    live: "https://www.menalated.com/",
+    image_routes: [
+      {
+        name: "home",
+        route: "/menalated/home.png",
+      },
+      {
+        name: "shop",
+        route: "/menalated/shop.png",
+      },
+      {
+        name: "education",
+        route: "/menalated/education.png",
+      },
+      {
+        name: "rewards",
+        route: "/menalated/rewards.png",
+      },
+    ],
+    role: "Web Developer",
+    tools: "HTML5, CSS3, Liquid, Shopify",
+    link: "menalated",
+    summary:
+      "The clinic website I developed aimed to provide a seamless user experience for booking appointments and managing clinic operations. Patients could easily schedule appointments, view available time slots, and receive updates, while the clinic staff efficiently managed bookings, cancellations, and patient records. The user-friendly interface and optimized functionality contributed to smoother operations and improved patient satisfaction, making the platform a valuable asset for both users and clinic staff.",
+  },
+  {
     name: "St. Luke Cardiac Clinic",
     image: {
       view: "/luke/luke-1.png",

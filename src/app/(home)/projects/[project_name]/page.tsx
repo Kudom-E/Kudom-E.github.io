@@ -4,6 +4,7 @@ import ProjectDetails from "./ProjectDetails";
 
 export async function generateStaticParams() {
   return [
+    { project_name: "menalated" },
     { project_name: "stluke" },
     { project_name: "afps" },
     { project_name: "scheduler" },
