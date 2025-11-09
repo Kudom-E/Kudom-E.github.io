@@ -43,7 +43,7 @@ export const projects = [
   {
     name: "St. Luke Clinic",
     short: "stluke",
-    image: "/luke/luke-desk.jpeg",
+    image: "/luke/luke-desk.svg",
     year: "2024",
     link: "/projects/stluke",
   },
@@ -58,7 +58,7 @@ export const projects = [
     name: "Companion: AWS Navigation",
     short: "companion",
     image: "/comp/comp-desk.svg",
-    year: "2025",
+    year: "2023",
     link: "/projects/companion",
   },
   {

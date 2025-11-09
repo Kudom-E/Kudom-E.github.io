@@ -36,11 +36,11 @@ export const projectlist = [
     name: "St. Luke Cardiac Clinic",
     image: {
       view: "/luke/luke-1.png",
-      desktop: "/luke/luke-desk.jpeg",
+      desktop: "/luke/luke-desk.svg",
       tab: "/luke/luke-tab.svg",
       mobile: "/luke/luke-mobile.svg",
     },
-    live: "Coming Soon",
+    live: "https://stlukecardiacclinic.com/",
     image_routes: [
       {
         name: "home",
@@ -55,12 +55,12 @@ export const projectlist = [
         route: "/luke/luke-about.png",
       },
       {
-        name: "contact",
-        route: "/luke/luke-contact.png",
+        name: "appointments",
+        route: "/luke/luke-book.png",
       },
       {
-        name: "dashboard",
-        route: "/luke/luke-dash.svg",
+        name: "contact",
+        route: "/luke/luke-contact.png",
       },
     ],
     role: "Web Developer",
