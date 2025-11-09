@@ -71,42 +71,24 @@ export const projectlist = [
       "The clinic website I developed aimed to provide a seamless user experience for booking appointments and managing clinic operations. Patients could easily schedule appointments, view available time slots, and receive updates, while the clinic staff efficiently managed bookings, cancellations, and patient records. The user-friendly interface and optimized functionality contributed to smoother operations and improved patient satisfaction, making the platform a valuable asset for both users and clinic staff.",
   },
   {
-    name: "Movie Scheduler",
+    name: "Companion: AWS Navigation",
     image: {
-      view: "/scheduler/Simage.png",
-      desktop: "/scheduler/sched-desk.svg",
-      tab: "/scheduler/sched-tab.jpg",
-      mobile: "/scheduler/sched-mobile.svg",
+      view: "/comp/Image1.png",
+      desktop: "/comp/comp-desk.svg",
+      tab: "/comp/comp-tab.svg",
+      mobile: "/comp/comp-mobile.svg",
     },
     live: "Coming Soon",
     image_routes: [
       {
         name: "home",
-        route: "/scheduler/home.png",
-      },
-      {
-        name: "try",
-        route: "/scheduler/try.png",
+        route: "/comp/Companion.png",
       },
     ],
-    role: "Software Engineer",
-    tools: "Typescript, Next, Tailwind, Jest",
-    link: "scheduler",
-    summary: `Having identified scheduling issues during my attendance at the movie 
-      event featuring six premieres in a single day, my focus has been on 
-      driving the automation of the scheduling process for 
-      the movie event and creating an efficient system. With a limited number of cinema 
-      rooms available, the challenge was to schedule the six movies within 
-      the four sessions for each cinema room. The complexity was further 
-      addressed by analyzing customer movement by noting the movies they 
-      would choose to watch and the cinema rooms that would be showing them 
-      at specific times. This ensured an optimal schedule regardless of the 
-      selected sequence of four movies. This project not only 
-      streamlined the scheduling logistics for the event but also enhanced 
-      the overall customer experience by strategically organizing cinema 
-      sessions and minimizing room changes, ultimately reducing crowding by 
-      80% and creating a seamless and enjoyable movie-watching experience 
-      for their customers.`,
+    role: "Frontend Engineer",
+    tools: "JavaScript, HTML, CSS, Chrome Extensions (Manifest V3)",
+    link: "companion",
+    summary: `Built a JavaScript-based Chrome extension (Manifest V3) that enhances AWS Console navigation with dynamic context links and in-UI highlighting of relevant sections, reducing task-switching time for developers by 30% (Feb 2025).`,
   },
   {
     name: "African Pharmaceutical Symposium",

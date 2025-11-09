@@ -70,7 +70,7 @@ const Header = ({
               return (
                 <li
                   key={index}
-                  className="relative py-[.5rem] px-[1rem] cursor-pointer"
+                  className="relative py-[.5rem] px-[1rem] pr-[.9rem] cursor-pointer"
                   onClick={() => handleScrollToSection(route.ref)}
                 >
                   <div

@@ -7,7 +7,7 @@ export async function generateStaticParams() {
     { project_name: "menalated" },
     { project_name: "stluke" },
     { project_name: "afps" },
-    { project_name: "scheduler" },
+    { project_name: "companion" },
     { project_name: "zroverse" },
     { project_name: "aiti" },
   ];

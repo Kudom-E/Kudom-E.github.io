@@ -55,11 +55,11 @@ export const projects = [
     link: "/projects/afps",
   },
   {
-    name: "Cinema Scheduler",
-    short: "scheduler",
-    image: "/scheduler/sched-desk.svg",
-    year: "2023",
-    link: "/projects/scheduler",
+    name: "Companion: AWS Navigation",
+    short: "companion",
+    image: "/comp/comp-desk.svg",
+    year: "2025",
+    link: "/projects/companion",
   },
   {
     name: "ZROverse",
